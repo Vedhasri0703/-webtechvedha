@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Highest of Three Numbers</title>
+    </head>
+    <script>
+        function high(){
+            let a = parseInt(document.getElementById("btn1").value);
+            let b = parseInt(document.getElementById("btn2").value);
+            let c = parseInt(document.getElementById("btn3").value);
+
+            if(a>b){
+                if(a>c){
+                    alert(a+" is the Highest Number");
+                }
+                else{
+                    alert(c+" is the Highest Number");
+                }
+            }
+            else{
+                if(b>c){
+                    alert(b+" is the Highest Number");
+                }
+                else{
+                    alert(c+" is the Highest Number");
+                }
+            }
+        }
+    </script>
+    <body>
+        Enter the 1<sup>st</sup> Number: <input type="number" id="btn1"><br>
+        Enter the 2<sup>nd</sup> Number: <input type="number" id="btn2"><br>
+        Enter the 3<sup>rd</sup> Number: <input type="number" id="btn3"><br><br>
+        <input type="button" onclick="high()" value="Check">
+    </body>
+</html>

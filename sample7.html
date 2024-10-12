@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>EB Bill Caluculation</title>
+    </head>
+    <link href="bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script>
+        function calc(){
+            let units = parseInt(document.getElementById("units").values);
+            let amt = 0;
+            if(units<=100){
+                amt = 0.0;
+            }
+            else if(units<=200 && units>=101){
+                amt = units*1.5;
+                amt += 20;
+            }   
+            else if(units<=200 && units>=101){
+                amt = units*1.5;
+                amt += 20;
+            }
+        }
+
+    </script>
+    <body>
+        Enter the units consumed: <input type="text" class="form control" id="units"><br>
+        <input type="button" id="btn" class="btn btn-primary" value="Calculate" onclick="calc()"><br>
+        <span id="res"></span>
+    </body>
+</html>

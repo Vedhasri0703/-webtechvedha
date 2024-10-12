@@ -1,0 +1,130 @@
+<html>
+    <head>
+        <title>Basic Javascript Opertaions</title>
+    </head>
+    <style>
+        *{
+            font-family: 'High Tower Text';
+        }
+        body{
+            background: url("landscape.jpg");
+        }
+        table{
+            width: 500px;
+            height: 400px;
+            border-collapse: collapse;
+            box-sizing: border-box;
+            margin-top: 170px;
+            font-size: 20px;
+            border: #669999 3px solid;
+            color: #006666;
+        }
+        td{
+            padding: 20px;
+        }
+        #h{
+            font-size: 25px;
+            text-align: center; 
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+        #btn1{
+            border: 3px solid #669999;
+            border-radius: 5px;
+        }
+        #btn2{
+            border: 3px solid #669999;
+            border-radius: 5px;
+        }
+        
+        button{
+            padding: 10px;
+            float: right;
+            margin-right: 50px;
+            font-size: 20px;
+            background: transparent;
+            border: #669999 3px solid;
+            color: #669999;
+            transition: ease-in-out 0.9ms;
+            border-radius: 5px;
+        }
+        button:hover{  
+            color: #fff;
+            border: 3px solid #669999;
+            border-radius: 5px;
+            background: #669999;
+        }
+
+    </style>
+    <script>
+        function calc(){
+            let a = parseInt(document.getElementById("btn1").value);
+            let b = parseInt(document.getElementById("btn2").value);
+            let c = document.getElementById("btn3").value;
+            if(c == '+')
+            {
+                document.getElementById("result").innerHTML = a + b;
+            }
+            else if(c == '-')
+            {
+                document.getElementById("result").innerHTML = a - b;
+            }
+            else if(c == '*')
+            {
+                document.getElementById("result").innerHTML = a * b;
+            }
+            else if(c == '/')
+            {
+                document.getElementById("result").innerHTML = a / b;
+            }
+            else if(c == '%')
+            {
+                document.getElementById("result").innerHTML = a % b;
+            }
+            else
+            {
+                document.getElementById("result").innerHTML = "Invalid Operator";
+            }
+            
+        }
+    </script>
+    <body><form>
+        <center>
+        <table border="3px">
+            <tr>
+                <td colspan="2" id="h">Arthimetic Operation</td>
+            </tr>
+            <tr>
+                <td>Enter the value: </td>
+                <td><input type="text" required id="btn1" ></td>
+            </tr>
+            <tr>
+                <td>Enter the value: </td>
+                <td><input type="text" required id="btn2"></td>
+            </tr>
+            <tr>
+                <td>Operation to performed:</td>
+                
+                <td>
+                    <select id="btn3" required>
+                        <option>-- Please Select --</option>
+                        <option>+</option>
+                        <option>-</option>
+                        <option>*</option>
+                        <option>/</option>
+                        <option>%</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Result</td>
+                <td><span id="result"></span></td>
+            </tr>
+            <tr>
+                <td colspan="2" id="ca"><button onclick="calc()">Calculate</button></td>
+            </tr>
+        </table>
+        </center>
+    </form>
+    </body>
+</html>

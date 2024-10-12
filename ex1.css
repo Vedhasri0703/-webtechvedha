@@ -1,0 +1,41 @@
+*{
+    background:fixed;
+    background-image: url(img5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1,h2{
+    color: #4f3e2b;
+}
+
+h3{
+    color: crimson;
+}
+
+pre{    
+    font-size: 20px;
+}
+
+.bk{
+    border: 3px solid #644f37;
+    background: wheat;
+    margin: 20px;
+    text-align: justify;
+    border-radius: 10px;
+}
+
+#txt{
+    border: #644f37 3px solid;
+    border-radius: 5px;
+    background: #fcf0dc;
+}
+
+#txt-sub{
+    border: #644f37 3px solid;
+    border-radius: 5px;
+    background: #fcf0dc;
+    padding: 5px;
+    letter-spacing: 2.5px;
+}

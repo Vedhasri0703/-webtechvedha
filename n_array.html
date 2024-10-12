@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Sum Of N Array Elements</title>
+    </head>
+    <script>
+        function Calc(){
+            let n, a=[], sum;
+            n = parseInt(document.getElementById("n").value);
+            for(let i = 0; i < n ; i++){
+                a.push(parseInt(prompt("Enter the number:")));
+                sum += a[i];
+            }
+            document.getElementById("res").innerHTML = "Sum = " + sum;
+            console.log(a);
+        }
+        function display(){
+
+        }
+    </script>
+    <body>
+        Enter the Size: <input type="text" id="n" required><br>
+        <input type="button" value="OK" onclick="display()"><br>
+        <span id="res"></span>
+    </body>
+</html>

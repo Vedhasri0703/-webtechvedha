@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Bootstrap Grid for Values enter</title>
+    </head>
+    <link href="bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script>
+        function add(){
+            let a = parseInt(document.getElementById("bt1").value);
+            let b = parseInt(document.getElementById("bt2").value);
+            let c = a+b;
+            document.getElementById("res").value = c;
+        }
+    </script>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2">
+                    Enter the 1<sup>st</sup> number: 
+                </div>
+                <div class="col-md-10">
+                    <input type="text" id="bt1">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    Enter the 2<sup>nd</sup> number: 
+                </div>
+                <div class="col-md-10">
+                    <input type="text" id="bt2">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    Result: 
+                </div>
+                <div class="col-md-10  ">
+                    <input type="text" id="res" disabled>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <input type="button" value="Ok" onclick="add()">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

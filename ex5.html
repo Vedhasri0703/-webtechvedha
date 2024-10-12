@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Pattern Generation</title>
+    </head>
+    <script>
+        function Calc(){
+            let n, i, j, r = "";
+            n = parseInt(document.getElementById("bt1").value);
+            for(i = 1; i <= n; i++){
+                for(j = 1; j<=i; j++){
+                    r = r + j;
+                }
+                r = r + "<br>";
+            }
+            document.getElementById("res").innerHTML = r;
+        }
+    </script>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <table width="300px">
+                        <tr>
+                            <td>Enter the limit:</td>
+                            <td><input type="text" id="bt1" required></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="button" value="OK" onclick="Calc()"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><span id="res"></span></td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table width="300px"></table>
+                        <tr>
+                            <td>Enter the limit:</td>
+                            <td><input type="text" id="bt1" required></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="button" value="OK" onclick="Calc()"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><span id="res"></span></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+    </body>
+</html>

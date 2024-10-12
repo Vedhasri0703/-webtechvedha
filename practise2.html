@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Sample</title>
+    </head>
+    <script>
+        function add(){
+            let a = parseInt(document.getElementById("bt1").value);
+            let b = parseInt(document.getElementById("bt2").value);
+            let c = a+b;
+            document.getElementById("res").value = c;
+        }
+    </script>
+    <body>
+        <form>
+            <table width="500px" height="150px">
+                <tr>
+                    <td>Enter the 1<sup>st</sup> number: </td>
+                    <td><input type="text" id="bt1"></td>
+                </tr>
+                <tr>
+                    <td>Enter the 2<sup>nd</sup> number: </td>
+                    <td><input type="text" id="bt2"></td>
+                </tr>
+                <tr>
+                    <td>Result: </td>
+                    <td><input type="text" id="res" disabled></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="button" value="Ok" onclick="add()"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

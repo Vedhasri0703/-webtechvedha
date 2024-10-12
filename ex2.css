@@ -1,0 +1,153 @@
+
+.c1{
+    background-color: rgb(61, 98, 108);
+    min-height: 80px;
+    color: #fff;
+    padding: 10px;
+    padding-left: 50px;
+    padding-top: 15px;
+    font-size: 30px;
+    font-family: 'Courier New';
+    font-weight: 700;   
+}
+
+.c1 a{
+    padding: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.c1 a:hover{
+    border-bottom: #fff 2px solid;
+    transition: 5s ease-in;
+}
+
+.c1 button{
+    background-color: transparent;
+    color: #fff;
+    border: #fff solid 3px;
+    border-radius: 4px;
+    font-size: 25px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.c1 button:hover{
+    background-color: #fff;
+    color: rgb(61, 98, 108);
+}
+
+.c2{
+    background: linear-gradient(180deg, rgba(61, 98, 108, .5), rgba(61, 98, 108, .5)),url("flower1.jpg");
+    min-height: 600px;
+    width: 100%;
+    background-color: rgb(61, 98, 108);
+    background-repeat: no-repeat;
+    height: 700px;
+    background-position: top;
+   
+}
+
+#craft{
+    color: #fff;
+    font-family: 'Courier New';
+    font-size: 60px;
+    font-weight: 700;
+    padding-top: 150px;
+    padding-left: 280px;
+}
+
+#craft-inner{
+    color: #fff;
+    font-family: 'Courier New';
+    font-size: 30px;
+    font-weight: 200;
+    padding-left: 280px;
+}
+
+#view{
+    color: #fff;
+    font-family: 'Courier New';
+    font-size: 25px;
+    font-weight: 700;
+    margin-left: 280px;
+    padding: 13px;
+    background: transparent;
+    border: 3px solid #fff;
+    border-radius: 4px;
+    letter-spacing: 0.15cm;
+}
+
+#view:hover{
+    background: #fff;
+    color: rgb(61, 98, 108);
+}
+
+.col3{
+    min-height: 400px;
+    max-width: 290px;
+    border: 3px black solid;
+    margin: 30px;
+    margin-left: 50px;
+}
+
+.sec1{
+    background: #D0E7D2;
+    border: 3px #D0E7D2 solid;
+    color: rgb(61, 98, 108);
+}
+
+.sec2{
+    background: #F0DBDB;
+    border: 3px #F0DBDB solid;
+    color: rgb(61, 98, 108);
+}
+
+.sec3{
+    background: #BED7DC;
+    border: 3px #BED7DC solid;
+    color: rgb(61, 98, 108);
+}
+
+.sec4{
+    background: #AEBDCA;
+    border: 3px #AEBDCA solid;
+    color: rgb(61, 98, 108);
+}
+
+.c3{
+    background-color: rgb(61, 98, 108);
+    min-height: 80px;
+    padding-top: 20px;
+}
+
+.c3 p{
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Courier New';
+    text-align: center;
+}
+
+.arts{
+    padding: 30px;
+    text-align: center;
+    font-family: 'Courier';
+    font-size: 50px;
+    font-weight: 900;
+    color: rgb(61, 98, 108);
+}
+
+.c5{
+    margin: 30px;
+    width: 440px;
+    transition: transform .2s;
+}
+
+.c5:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+}

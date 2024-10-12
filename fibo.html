@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Fibonocci series</title>
+    </head>
+    <script>
+        function fibo(){
+            let n = parseInt(prompt('Enter the number of terms: '))
+            let num1 = -1;
+            let num2 = 1;
+            let sum = 0;
+            let Result ="Fibonocci Series = ";
+            for(let i=1; i<=n; i++){
+                sum = num1 + num2;
+                num1 = num2;
+                num2 = sum;
+                Result += sum+" ";
+            }
+            document.getElementById("res").innerHTML = Result;
+        }
+    </script>
+    <body>
+        <input type="button" id="limit" value="Check Fibonocci Series" onclick="fibo()"><br><br>
+        <span id="res"></span>
+    </body>
+</html>
